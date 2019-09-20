@@ -294,12 +294,13 @@ args=parser.parse_args()
 fig = plt.figure(figsize=(11.7,8.3))
 plt.subplots_adjust(left=0.05,right=0.95,top=0.90,bottom=0.05,wspace=0.15,hspace=0.05)
 ax = plt.subplot(111)
-if args.proj == 'default':
-    m = Basemap(resolution='l')
-elif args.proj == 'npstere':
-    m = Basemap(projection='npstere',boundinglat=-30,lon_0=270,resolution='l')
-else:
-    print('unknown projection type')
+
+#if args.proj == 'default':
+#    m = Basemap(resolution='l')
+#elif args.proj == 'npstere':
+m = Basemap(projection='npstere',boundinglat=60,lon_0=270,resolution='l')
+#else:
+#    print('unknown projection type')
 m.drawmapboundary(fill_color='azure')
 m.fillcontinents(color='palegoldenrod',lake_color='azure')
 m.drawcoastlines()
