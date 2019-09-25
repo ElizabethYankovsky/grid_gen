@@ -298,7 +298,7 @@ ax = plt.subplot(111)
 #if args.proj == 'default':
 #    m = Basemap(resolution='l')
 #elif args.proj == 'npstere':
-m = Basemap(projection='npstere',boundinglat=60,lon_0=270,resolution='l')
+m = Basemap(projection='npstere',boundinglat=60,lon_0=0,resolution='l')
 #else:
 #    print('unknown projection type')
 m.drawmapboundary(fill_color='azure')

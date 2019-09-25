@@ -8,7 +8,7 @@ x = fid.variables['x'][:]
 y = fid.variables['y'][:]
 
 plt.figure()
-m = Basemap(projection='npstere',boundinglat=60,lon_0=270,resolution='l')
+m = Basemap(projection='npstere',boundinglat=60,lon_0=0,resolution='l')
 xnew, ynew =m(x,y)
 m.pcolor(xnew,ynew,y)
 m.drawmapboundary(fill_color='azure')
