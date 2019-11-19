@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap
 import numpy as np
 
-fid = nc.Dataset('ocean_hgrid.nc')
+fid = nc.Dataset('ocean_hgrid_final1.nc')
 x = fid.variables['x'][:]
 y = fid.variables['y'][:]
 

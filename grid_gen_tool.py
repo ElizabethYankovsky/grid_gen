@@ -1,3 +1,7 @@
+#import matplotlib
+#matplotlib.use('Agg')
+import os
+os.environ['PROJ_LIB'] = '/nbhome/Elizabeth.Yankovsky/anaconda3/envs/py2/share/proj/'
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 import numpy as np
